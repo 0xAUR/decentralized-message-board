@@ -1,0 +1,36 @@
+{
+  "name": "decentralized-message-board",
+  "version": "1.0.0",
+  "description": "A fully functional Web3 application that allows users to post and view messages on the blockchain",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "deploy:mumbai": "hardhat run scripts/deploy.js --network mumbai",
+    "frontend": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "start": "cd frontend && npm run dev"
+  },
+  "keywords": [
+    "web3",
+    "blockchain",
+    "ethereum",
+    "solidity",
+    "decentralized"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.12",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "autoprefixer": "^10.4.21",
+    "hardhat": "^2.24.0",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0"
+  }
+}
